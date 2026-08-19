@@ -3,11 +3,13 @@ Combine your Elytra and chestplate!
 
 This is an experimental resource pack and datapack combo for Minecraft Java that allows you to create an item that is an Elytra and chestplate in one item.
 
+Available for Minecraft Java 26.2+, vanilla.
+
 > [!WARNING]
 > This is a highly experimental resource/datapack. I do not recommend using this in a serious survival world as there is no way to seperate the Elytra and chestplate in the current version.
 
 ## Downloads
-Downloads can be found here.
+Downloads can be found [here]([url](https://github.com/ChargeUp03/elytra_chestplates/releases/tag/v1.0a)).
 
 ## How to Install
 1. Download both the datapack and resource pack
@@ -44,3 +46,9 @@ Use the following commands to obtain each combined chestplate:
 **Netherite Chestplate:**
 /give @p netherite_chestplate[item_model="elytra_chestplates:netherite_chestplate_elytra",lore=[{"color":"gray","text":"Combined with Elytra"}],equippable={slot:"chest",equip_sound:"item.armor.equip_netherite",asset_id:"elytra_chestplates:netherite_chestplate_elytra"},glider={}] 1
 
+## Limitations
+There are a few issues with the resource/datapack:
+* Items not appearing in creative menu: This is a fundamental limitation of datapacks. Unless we make this a full mod, this isn't possible
+* Trims don't appear on item form/trims break elytra: I'm not exactly sure what's causing this, but I may be able to fix it in the future.
+* Upgrading diamond to netherite doesn't change the texture: This is simply because the upgraded item inherits diamond's textures. Functionally, it's still netherite, just with diamond's textures. This will be fixed.
+* Item breaking destroys both the elytra and chestplate: This is because the item is based on the chestplate, which doesn't have elytra's broken form code. Later, I plan to have the datapack track each item's durability so they break separately and correctly.
