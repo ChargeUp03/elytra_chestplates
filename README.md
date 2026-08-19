@@ -52,3 +52,12 @@ There are a few issues with the resource/datapack:
 * Trims don't appear on item form/trims break elytra: I'm not exactly sure what's causing this, but I may be able to fix it in the future.
 * Upgrading diamond to netherite doesn't change the texture: This is simply because the upgraded item inherits diamond's textures. Functionally, it's still netherite, just with diamond's textures. This will be fixed.
 * Item breaking destroys both the elytra and chestplate: This is because the item is based on the chestplate, which doesn't have elytra's broken form code. Later, I plan to have the datapack track each item's durability so they break separately and correctly.
+
+## Dyeing
+With the combined leather tunic, you can still dye it as normal. The two items are seperate layers so the elytra portion doesn't get recolored.
+
+## Images
+![Front, sneaking](images/1.png)
+![Back, sneaking](images/2.png)
+![Back, standing](images/3.png)
+![Flying](images/4.png)
